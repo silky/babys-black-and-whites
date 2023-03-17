@@ -1,0 +1,11 @@
+resolver: lts-20.11
+
+nix:
+  shell-file: "./nix/stack-shell.nix"
+
+# extra-deps:
+#   - github: diagrams/diagrams-cairo
+#     commit: 72e4bcaef4423de4a5ee31e46b78668bf97722e4
+
+packages:
+   - .

@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1678872516,
+        "narHash": "sha256-/E1YwtMtFAu2KUQKV/1+KFuReYPANM2Rzehk84VxVoc=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "9b8e5abb18324c7fe9f07cb100c3cd4a29cda8b8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-22.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "stacklock2nix": "stacklock2nix"
+      }
+    },
+    "stacklock2nix": {
+      "locked": {
+        "lastModified": 1679031679,
+        "narHash": "sha256-OoPl3gyzkcOFfueMYjN2QH/8yK2GgfyV9Tv0QMQHQi0=",
+        "owner": "cdepillabout",
+        "repo": "stacklock2nix",
+        "rev": "0200e4c10aaddc39c77315a09b2acb07fac14551",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cdepillabout",
+        "ref": "main",
+        "repo": "stacklock2nix",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,40 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           baby-black-and-whites
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/silky/baby-black-and-whites#readme
+author:         Noon van der Silk
+maintainer:     noonsilk@gmail.com
+copyright:      2023 Noon van der Silk
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+executable baby-black-and-whites
+  main-is: Main.hs
+  other-modules:
+      Paths_baby_black_and_whites
+  hs-source-dirs:
+      src
+  default-extensions:
+      FlexibleContexts
+      GADTs
+      ImportQualifiedPost
+      NoMonomorphismRestriction
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+    , diagrams
+    , diagrams-cairo
+    , diagrams-contrib
+    , diagrams-lib
+    , random
+  default-language: Haskell2010
