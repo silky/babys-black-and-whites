@@ -3,9 +3,10 @@ module Main (main) where
 import Diagrams.Backend.Cairo.CmdLine
 import Diagrams.Prelude
 
-import Moons       qualified as Moons
-import Star        qualified as Star
-import VectorField qualified as VectorField
+import Moons         qualified as Moons
+import Star          qualified as Star
+import VectorField   qualified as VectorField
+import DiamondTheory qualified as DiamondTheory
 
 main :: IO ()
 -- main = mainWith haskellLogo
@@ -15,7 +16,9 @@ main :: IO ()
 -- main = mainWith (reflectX $ Moons.oneBigMoon :: Diagram B)
 -- main = mainWith circles
 -- main = mainWith (Moons.moons :: Diagram B)
-main = mainWith (Moons.manyMoons :: Diagram B)
+-- main = mainWith (Moons.manyMoons :: Diagram B)
+-- main = mainWith (DiamondTheory.tile :: Diagram B)
+main = mainWith (undefined :: Diagram B)
 
 
 circles :: Diagram B

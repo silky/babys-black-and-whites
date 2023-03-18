@@ -28,6 +28,7 @@ dependencies:
   - diagrams-contrib
   - diagrams-lib
   - random
+  - split
 
 
 ghc-options:
