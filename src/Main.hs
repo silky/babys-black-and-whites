@@ -8,6 +8,8 @@ import Star             qualified as Star
 import VectorField      qualified as VectorField
 import DiamondTheory    qualified as DiamondTheory
 import CubicLimitSeries qualified as Cubes
+import WaveAxis         qualified as WaveAxis
+import Wavey            qualified as Wavey
 
 main :: IO ()
 -- main = mainWith haskellLogo
@@ -19,12 +21,10 @@ main :: IO ()
 -- main = mainWith (Moons.moons :: Diagram B)
 -- main = mainWith (Moons.manyMoons :: Diagram B)
 -- main = mainWith (DiamondTheory.tile :: Diagram B)
-main = mainWith Cubes.design
-
--- TODO:
--- - Cubic-Limit-Series
--- - Wave-Axis
--- - Wavey
+-- main = mainWith Cubes.design -- Fairly annoying.
+-- main = mainWith WaveAxis.d
+-- main = mainWith Wavey.type2
+main = undefined
 
 
 circles :: Diagram B

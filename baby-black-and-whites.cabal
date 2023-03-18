@@ -26,6 +26,8 @@ executable baby-black-and-whites
       Moons
       Star
       VectorField
+      WaveAxis
+      Wavey
       Paths_baby_black_and_whites
   hs-source-dirs:
       src
