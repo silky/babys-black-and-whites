@@ -21,6 +21,7 @@ extra-source-files:
 executable baby-black-and-whites
   main-is: Main.hs
   other-modules:
+      VectorField
       Paths_baby_black_and_whites
   hs-source-dirs:
       src

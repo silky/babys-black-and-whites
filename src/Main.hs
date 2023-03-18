@@ -2,12 +2,12 @@ module Main (main) where
 
 import Diagrams.Backend.Cairo.CmdLine
 import Diagrams.Prelude
-import Diagrams.TwoD.Offset
-import Diagrams.TwoD.Path.Boolean qualified as Boolean
 
+import VectorField qualified as VectorField
 
 main :: IO ()
-main = mainWith haskellLogo
+-- main = mainWith haskellLogo
+main = mainWith (VectorField.example :: Diagram B)
 
 
 haskellLogo :: Diagram B
