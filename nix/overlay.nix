@@ -20,8 +20,6 @@ final: prev: rec {
         hpack_0_35_0   = final.haskell.lib.dontCheck hprev.hpack_0_35_0;
         hspec-contrib  = final.haskell.lib.dontCheck hprev.hspec-contrib;
         mfsolve        = final.haskell.lib.dontCheck hprev.mfsolve;
-        # diagrams-cairo = final.haskell.lib.dontCheck hprev.diagrams-cairo;
-        nothunks = final.haskell.lib.dontCheck hprev.nothunks;
       })
     ];
 
@@ -51,6 +49,8 @@ final: prev: rec {
       final.stack
 
       cabalWrapped
+
+      final.fswatch
     ];
   };
 }

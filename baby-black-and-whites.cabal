@@ -21,6 +21,8 @@ extra-source-files:
 executable baby-black-and-whites
   main-is: Main.hs
   other-modules:
+      Moons
+      Star
       VectorField
       Paths_baby_black_and_whites
   hs-source-dirs:
@@ -30,6 +32,7 @@ executable baby-black-and-whites
       GADTs
       ImportQualifiedPost
       NoMonomorphismRestriction
+      TupleSections
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5

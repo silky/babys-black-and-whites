@@ -3,11 +3,29 @@ module Main (main) where
 import Diagrams.Backend.Cairo.CmdLine
 import Diagrams.Prelude
 
+import Moons       qualified as Moons
+import Star        qualified as Star
 import VectorField qualified as VectorField
 
 main :: IO ()
 -- main = mainWith haskellLogo
-main = mainWith (VectorField.example :: Diagram B)
+-- main = mainWith (VectorField.example :: Diagram B)
+-- main = mainWith (Star.example :: Diagram B)
+-- main = mainWith (Moons.oneBigMoon :: Diagram B)
+-- main = mainWith (reflectX $ Moons.oneBigMoon :: Diagram B)
+-- main = mainWith circles
+-- main = mainWith (Moons.moons :: Diagram B)
+main = mainWith (Moons.manyMoons :: Diagram B)
+
+
+circles :: Diagram B
+circles = pad 1.1
+        $ mconcat
+        $ reverse
+        $ zipWith circ pts (cycle [black, white])
+  where
+    pts = [1, 0.9 .. 0.0]
+    circ n c = circle n # fc c # lw none
 
 
 haskellLogo :: Diagram B
