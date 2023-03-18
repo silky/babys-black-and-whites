@@ -3,10 +3,11 @@ module Main (main) where
 import Diagrams.Backend.Cairo.CmdLine
 import Diagrams.Prelude
 
-import Moons         qualified as Moons
-import Star          qualified as Star
-import VectorField   qualified as VectorField
-import DiamondTheory qualified as DiamondTheory
+import Moons            qualified as Moons
+import Star             qualified as Star
+import VectorField      qualified as VectorField
+import DiamondTheory    qualified as DiamondTheory
+import CubicLimitSeries qualified as Cubes
 
 main :: IO ()
 -- main = mainWith haskellLogo
@@ -18,7 +19,12 @@ main :: IO ()
 -- main = mainWith (Moons.moons :: Diagram B)
 -- main = mainWith (Moons.manyMoons :: Diagram B)
 -- main = mainWith (DiamondTheory.tile :: Diagram B)
-main = mainWith (undefined :: Diagram B)
+main = mainWith Cubes.design
+
+-- TODO:
+-- - Cubic-Limit-Series
+-- - Wave-Axis
+-- - Wavey
 
 
 circles :: Diagram B

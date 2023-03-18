@@ -28,8 +28,9 @@ dependencies:
   - diagrams-contrib
   - diagrams-lib
   - random
+  - random-fu
+  - random-shuffle
   - split
-
 
 ghc-options:
 - -Wall
