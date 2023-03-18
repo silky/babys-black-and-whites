@@ -1,3 +1,4 @@
+-- https://diagrams.github.io/gallery/VectorField.html
 module VectorField where
 
 import Diagrams.Prelude
