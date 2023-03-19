@@ -26,6 +26,11 @@ main :: IO ()
 -- main = mainWith Wavey.type2
 main = undefined
 
+-- TODO:
+--
+--  - [ ] A fractal one
+--  - [ ] An actual page-layout
+
 
 circles :: Diagram B
 circles = pad 1.1
