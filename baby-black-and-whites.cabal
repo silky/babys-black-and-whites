@@ -32,14 +32,17 @@ executable baby-black-and-whites
   hs-source-dirs:
       src
   default-extensions:
+      AllowAmbiguousTypes
       FlexibleContexts
       GADTs
       ImportQualifiedPost
       NoMonomorphismRestriction
       TupleSections
+      TypeApplications
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
-      base >=4.7 && <5
+      MonadRandom
+    , base >=4.7 && <5
     , diagrams
     , diagrams-cairo
     , diagrams-contrib

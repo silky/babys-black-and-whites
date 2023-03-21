@@ -21,15 +21,16 @@ main :: IO ()
 -- main = mainWith (Moons.moons :: Diagram B)
 -- main = mainWith (Moons.manyMoons :: Diagram B)
 -- main = mainWith (DiamondTheory.tile :: Diagram B)
--- main = mainWith Cubes.design -- Fairly annoying.
+main = mainWith Cubes.design
 -- main = mainWith WaveAxis.d
 -- main = mainWith Wavey.type2
-main = undefined
+-- main = undefined
 
 -- TODO:
 --
 --  - [ ] A fractal one
 --  - [ ] An actual page-layout
+--  - [x] De-randomise the CubicLimit one and thicken lines properly
 
 
 circles :: Diagram B

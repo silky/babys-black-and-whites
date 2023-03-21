@@ -14,15 +14,18 @@ extra-source-files:
 
 
 default-extensions:
+  - AllowAmbiguousTypes
   - FlexibleContexts
   - GADTs
   - ImportQualifiedPost
   - NoMonomorphismRestriction
   - TupleSections
+  - TypeApplications
 
 
 dependencies:
   - base >= 4.7 && < 5
+  - MonadRandom
   - diagrams
   - diagrams-cairo
   - diagrams-contrib
