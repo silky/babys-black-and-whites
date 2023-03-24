@@ -12,19 +12,17 @@ import WaveAxis         qualified as WaveAxis
 import Wavey            qualified as Wavey
 
 main :: IO ()
--- main = mainWith haskellLogo
+main = mainWith haskellLogo
 -- main = mainWith (VectorField.example :: Diagram B)
 -- main = mainWith (Star.example :: Diagram B)
 -- main = mainWith (Moons.oneBigMoon :: Diagram B)
 -- main = mainWith (reflectX $ Moons.oneBigMoon :: Diagram B)
 -- main = mainWith circles
--- main = mainWith (Moons.moons :: Diagram B)
 -- main = mainWith (Moons.manyMoons :: Diagram B)
 -- main = mainWith (DiamondTheory.tile :: Diagram B)
-main = mainWith Cubes.design
+-- main = mainWith Cubes.design
 -- main = mainWith WaveAxis.d
 -- main = mainWith Wavey.type2
--- main = undefined
 
 -- TODO:
 --
@@ -44,7 +42,7 @@ circles = pad 1.1
 
 
 haskellLogo :: Diagram B
-haskellLogo = d <> (square 5 # lw none)
+haskellLogo = d <> (square 4.5 # lw none)
   where
     d = (mempty
         <> lambdas
